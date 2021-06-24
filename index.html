@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reversia</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Anwsome 5-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="navbar">
+        <a href="/" class="navbar__logo"
+          ><img src="/img/Reservia.svg" alt="Logo de Reservia" id="logo"
+        /></a>
+        <div class="navbar__link" id="host" data-active="true">
+          <a href="/">Hébergement</a>
+        </div>
+        <div class="navbar__link" id="act" data-active="false">
+          <a href="/">Activités</a>
+        </div>
+        <div class="navbar__signup" id="login">
+          <a href="/" class="color-primary">S'inscrire</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Header ends -->
+    <main class="container">
+      <section>
+        <div class="search">
+          <h1 class="search__h1">
+            Trouvez votre hébergement pour des vacances de rêve
+          </h1>
+          <p>En plein centre ville ou en pleine nature</p>
+          <div class="search__input">
+            <div class="search__icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <input
+              class="search__bar"
+              type="text"
+              placeholder="Marseille, France"
+            />
+            <button class="search__btn" type="submit">
+              <span class="search__btn--text">Rechercher</span>
+              <i class="search__btn--icon fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Search ends -->
+      <section>
+        <div class="filters">
+          <h3 class="filters__h3">Filtres</h3>
+          <div class="filters__item">
+            <div class="filters__icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <span class="filters__text">Économique</span>
+          </div>
+          <div class="filters__item">
+            <div class="filters__icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <span class="filters__text">Familial</span>
+          </div>
+          <div class="filters__item">
+            <div class="filters__icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <span class="filters__text">Romantique</span>
+          </div>
+          <div class="filters__item">
+            <div class="filters__icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <span class="filters__text">Animaux autorisés</span>
+          </div>
+        </div>
+      </section>
+      <!-- Filters ends -->
+      <section class="popular-hosting">
+        <div class="hosting">
+          <h3 class="hosting__h3">Hébergement à Marseille</h3>
+          <a href="/">
+            <div class="card card--hosting">
+              <img
+                class="card__img"
+                src="/img/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                alt="Hôtel le Soleil du Matin"
+              />
+              <div class="card__text">
+                <div class="card__title">
+                  <h2>Auberge la Cannebière</h2>
+                  <p>Nuit à partir de <strong>25€</strong></p>
+                </div>
+                <div class="card__stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/">
+            <div class="card card--hosting">
+              <img
+                class="card__img"
+                src="/img/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                alt="Hôtel le Soleil du Matin"
+              />
+              <div class="card__text">
+                <div class="card__title">
+                  <h2>Auberge la Cannebière</h2>
+                  <p>Nuit à partir de <strong>25€</strong></p>
+                </div>
+                <div class="card__stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/">
+            <div class="card card--hosting">
+              <img
+                class="card__img"
+                src="/img/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                alt="Hôtel le Soleil du Matin"
+              />
+              <div class="card__text">
+                <div class="card__title">
+                  <h2>Auberge la Cannebière</h2>
+                  <p>Nuit à partir de <strong>25€</strong></p>
+                </div>
+                <div class="card__stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/">
+            <div class="card card--hosting">
+              <img
+                class="card__img"
+                src="/img/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                alt="Hôtel le Soleil du Matin"
+              />
+              <div class="card__text">
+                <div class="card__title">
+                  <h2>Auberge la Cannebière</h2>
+                  <p>Nuit à partir de <strong>25€</strong></p>
+                </div>
+                <div class="card__stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/">
+            <div class="card card--hosting">
+              <img
+                class="card__img"
+                src="/img/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                alt="Hôtel le Soleil du Matin"
+              />
+              <div class="card__text">
+                <div class="card__title">
+                  <h2>Auberge la Cannebière</h2>
+                  <p>Nuit à partir de <strong>25€</strong></p>
+                </div>
+                <div class="card__stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/">
+            <div class="card card--hosting">
+              <img
+                class="card__img"
+                src="/img/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                alt="Hôtel le Soleil du Matin"
+              />
+              <div class="card__text">
+                <div class="card__title">
+                  <h2>Auberge la Cannebière</h2>
+                  <p>Nuit à partir de <strong>25€</strong></p>
+                </div>
+                <div class="card__stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="popular">
+          <div class="popular__header">
+            <h3 class="popular__h3">Les plus populaire</h3>
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <a href="/">
+            <div class="card card--popular">
+              <img
+                class="card__img"
+                src="/img/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="Hôtel le Soleil du Matin"
+              />
+              <div class="card__text">
+                <div class="card__title">
+                  <h2>Hôtel le Soleil du Matin</h2>
+                  <p>Nuit à partir de <strong>128€</strong></p>
+                </div>
+                <div class="card__stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/">
+            <div class="card card--popular">
+              <img
+                class="card__img"
+                src="/img/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="Hôtel le Soleil du Matin"
+              />
+              <div class="card__text">
+                <div class="card__title">
+                  <h2>Hôtel le Soleil du Matin</h2>
+                  <p>Nuit à partir de <strong>128€</strong></p>
+                </div>
+                <div class="card__stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/">
+            <div class="card card--popular">
+              <img
+                class="card__img"
+                src="/img/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="Hôtel le Soleil du Matin"
+              />
+              <div class="card__text">
+                <div class="card__title">
+                  <h2>Hôtel le Soleil du Matin</h2>
+                  <p>Nuit à partir de <strong>128€</strong></p>
+                </div>
+                <div class="card__stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- Popular & Hosting ends -->
+      <section>
+        <div class="activities">
+          <h3 class="activities__h3" id="activities__title">
+            Activités à Marseille
+          </h3>
+          <a href="/" id="card1">
+            <div class="card card--activities">
+              <img
+                class="card__img"
+                src="/img/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="Hôtel le Soleil du Matin"
+              />
+              <div class="card__title">
+                <h2>Vieux Port</h2>
+              </div>
+            </div>
+          </a>
+          <a href="/" id="card2">
+            <div class="card card--activities">
+              <img
+                class="card__img"
+                src="/img/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="Hôtel le Soleil du Matin"
+              />
+              <div class="card__title">
+                <h2>Fort de Pomègues</h2>
+              </div>
+            </div>
+          </a>
+          <a href="/" id="card3">
+            <div class="card card--activities">
+              <img
+                class="card__img"
+                src="/img/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="Hôtel le Soleil du Matin"
+              />
+              <div class="card__title">
+                <h2>Parc National des Calanques</h2>
+              </div>
+            </div>
+          </a>
+          <a href="/" id="card4">
+            <div class="card card--activities">
+              <img
+                class="card__img"
+                src="/img/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="Hôtel le Soleil du Matin"
+              />
+              <div class="card__title">
+                <h2>Notre-Dame-de-la-Garde</h2>
+              </div>
+            </div>
+          </a>
+          <a href="/" id="card5">
+            <div class="card card--activities">
+              <img
+                class="card__img"
+                src="/img/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="Hôtel le Soleil du Matin"
+              />
+              <div class="card__title">
+                <h2>Ile du Frioul</h2>
+              </div>
+            </div>
+          </a>
+          <a href="/" id="card6">
+            <div class="card card--activities">
+              <img
+                class="card__img"
+                src="/img/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="Hôtel le Soleil du Matin"
+              />
+              <div class="card__title">
+                <h2>Parc Longchamp</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- Activities ends -->
+    </main>
+    <!-- Main ends -->
+    <footer class="footer">
+      <div class="footer__links">
+          <div class="footer__link">
+            <h3>À propos</h3>
+            <ul>
+              <li>Fonctionnement du site</li>
+              <li>Conditions générales de vente</li>
+              <li>Données et confidentialité</li>
+            </ul>
+          </div>
+          <div class="footer__link">
+            <h3>Nos hébergements</h3>
+            <ul>
+              <li>Charte qualité</li>
+              <li>Soumettre votre hôtel</li>
+            </ul>
+          </div>
+          <div class="footer__link">
+            <h3>Assistance</h3>
+            <ul>
+              <li>Centre d'aide</li>
+              <li>Nous contacter</li>
+            </ul>
+          </div>
+      </div>
+    </footer>
+    <!-- Footer ends -->
+  </body>
+</html>
