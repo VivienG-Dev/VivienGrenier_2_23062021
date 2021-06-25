@@ -301,13 +301,13 @@ body {
           align-items: center;
   height: 50px;
   background: var(--tertiary);
-  padding: 1rem;
-  border-radius: 10px 0 0 10px;
+  padding: 1.2rem;
+  border-radius: 15px 0 0 15px;
 }
 
 .search__bar {
   height: 50px;
-  max-width: 60%;
+  width: 90%;
   border: none;
   border: 1px solid var(--tertiary);
   padding: 1.2rem;
@@ -350,6 +350,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -360,7 +361,7 @@ body {
   cursor: pointer;
   border: none;
   padding: 1rem;
-  border-radius: 0 10px 10px 0;
+  border-radius: 15px;
 }
 
 .search__btn--text {
@@ -379,6 +380,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
