@@ -10,7 +10,7 @@ Le site doit être responsive en utilisant uniquement HTML/CSS et les maquettes 
 
 Le code doit également ne contenir aucune erreur ni alerte au validateur W3C HTML et CSS.
 
-![Reversia Desktop](/img/Desktop-1.jpg?raw=true "Reversia")
+![Reversia Desktop](/img/Desktop-1.png?raw=true "Reversia")
 
 ## Le validateur W3C date de 2014...
 
