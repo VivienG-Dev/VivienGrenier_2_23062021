@@ -376,7 +376,7 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: auto (1fr)[3];
+  -ms-grid-rows: auto repeat(3, 1fr);
       grid-template-rows: auto repeat(3, 1fr);
   gap: 15px 0px;
   background: #F2F2F2;
@@ -420,7 +420,7 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: auto (1fr)[6];
+  -ms-grid-rows: auto repeat(6, 1fr);
       grid-template-rows: auto repeat(6, 1fr);
   gap: 15px 0px;
   width: 100%;
@@ -437,9 +437,9 @@ body {
 
 @media screen and (min-width: 768px) {
   .hosting {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: auto (1fr)[3];
+    -ms-grid-rows: auto repeat(3, 1fr);
         grid-template-rows: auto repeat(3, 1fr);
     -webkit-column-gap: 2rem;
             column-gap: 2rem;
@@ -454,9 +454,9 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hosting {
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: repeat(3, 1fr);
         grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: auto (1fr)[2];
+    -ms-grid-rows: auto repeat(2, 1fr);
         grid-template-rows: auto repeat(2, 1fr);
     -webkit-column-gap: 2rem;
             column-gap: 2rem;
@@ -473,9 +473,15 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: auto (1fr)[6];
+  -ms-grid-rows: auto repeat(6, 1fr);
       grid-template-rows: auto repeat(6, 1fr);
-      grid-template-areas: "activities__title" "card1" "card2" "card5" "card3"  "card4" "card6";
+      grid-template-areas: "activities__title"
+ "card1"
+ "card2"
+ "card5"
+ "card3" 
+ "card4"
+ "card6";
 }
 
 .activities a {
@@ -483,44 +489,30 @@ body {
 }
 
 .activities #activities__title {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: activities__title;
 }
 
 .activities #card1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: card1;
 }
 
 .activities #card2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: card2;
 }
 
 .activities #card3 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
   grid-area: card3;
 }
 
 .activities #card4 {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
   grid-area: card4;
 }
 
 .activities #card5 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
   grid-area: card5;
 }
 
 .activities #card6 {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
   grid-area: card6;
 }
 
@@ -528,12 +520,15 @@ body {
   .activities {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: auto (1fr)[3];
+    -ms-grid-rows: auto repeat(3, 1fr);
         grid-template-rows: auto repeat(3, 1fr);
     gap: 0 1rem;
-        grid-template-areas: "activities__title activities__title" "card1 card2" "card3 card4" "card5 card6";
+        grid-template-areas: "activities__title activities__title"
+ "card1 card2"
+ "card3 card4"
+ "card5 card6";
   }
   .activities a {
     margin-bottom: 0;
@@ -550,7 +545,10 @@ body {
     -ms-grid-rows: 0.2fr 1.2fr 1fr 1.2fr;
         grid-template-rows: 0.2fr 1.2fr 1fr 1.2fr;
     grid-gap: 2.5rem;
-        grid-template-areas: "activities__title activities__title activities__title activities__title" "card1 card2 card3 card4" "card1 card2 card3 card6" "card1 card5 card3 card6";
+        grid-template-areas: "activities__title activities__title activities__title activities__title"
+ "card1 card2 card3 card4"
+ "card1 card2 card3 card6"
+ "card1 card5 card3 card6";
   }
   .activities a {
     margin-bottom: 0;
@@ -622,35 +620,28 @@ header {
 header .navbar {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: repeat(2, 1fr);
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[2];
+  -ms-grid-rows: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      grid-template-areas: "logo login" "host act";
+      grid-template-areas: "logo login"
+ "host act";
 }
 
 header .navbar #logo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: logo;
 }
 
 header .navbar #login {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: login;
   font-weight: bold;
 }
 
 header .navbar #host {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: host;
 }
 
 header .navbar #act {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: act;
 }
 
@@ -659,7 +650,7 @@ header .navbar #act {
     display: -ms-inline-grid;
     display: inline-grid;
     width: 100%;
-    -ms-grid-columns: auto (1fr)[1];
+    -ms-grid-columns: auto repeat(1, 1fr);
         grid-template-columns: auto repeat(1, 1fr);
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
@@ -713,7 +704,7 @@ header .navbar #act {
     display: -ms-inline-grid;
     display: inline-grid;
     width: 100%;
-    -ms-grid-columns: auto (1fr)[1];
+    -ms-grid-columns: auto repeat(1, 1fr);
         grid-template-columns: auto repeat(1, 1fr);
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
