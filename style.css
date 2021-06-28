@@ -84,7 +84,14 @@ body {
   background-color: white;
   padding: 5px;
   border-radius: 20px;
+  transition: all .2s ease-in-out;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card__img {
@@ -157,6 +164,8 @@ body {
   height: 90%;
   padding: inherit;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
 }
 
 .card--activities .card__img {
@@ -376,13 +385,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto repeat(6, 1fr);
-  grid-template-areas: "activities__title"
- "card1"
- "card2"
- "card5"
- "card3" 
- "card4"
- "card6";
+  grid-template-areas: "activities__title" "card1" "card2" "card5" "card3"  "card4" "card6";
 }
 
 .activities a {
@@ -423,10 +426,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto repeat(3, 1fr);
     gap: 0 1rem;
-    grid-template-areas: "activities__title activities__title"
- "card1 card2"
- "card3 card4"
- "card5 card6";
+    grid-template-areas: "activities__title activities__title" "card1 card2" "card3 card4" "card5 card6";
   }
   .activities a {
     margin-bottom: 0;
@@ -440,10 +440,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 1.2fr 1fr 1.2fr;
     grid-gap: 2.5rem;
-    grid-template-areas: "activities__title activities__title activities__title activities__title"
- "card1 card2 card3 card4"
- "card1 card2 card3 card6"
- "card1 card5 card3 card6";
+    grid-template-areas: "activities__title activities__title activities__title activities__title" "card1 card2 card3 card4" "card1 card2 card3 card6" "card1 card5 card3 card6";
   }
   .activities a {
     margin-bottom: 0;
@@ -503,8 +500,7 @@ header .navbar {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "logo login"
- "host act";
+  grid-template-areas: "logo login" "host act";
 }
 
 header .navbar #logo {
