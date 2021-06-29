@@ -390,7 +390,13 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto repeat(6, 1fr);
   gap: 1.5rem 0;
-  grid-template-areas: "activities__title" "card1" "card2" "card5" "card3"  "card4" "card6";
+  grid-template-areas: "activities__title"
+ "card1"
+ "card2"
+ "card5"
+ "card3" 
+ "card4"
+ "card6";
 }
 
 .activities a {
@@ -431,7 +437,10 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto repeat(3, 1fr);
     gap: 1.5rem 1rem;
-    grid-template-areas: "activities__title activities__title" "card1 card2" "card3 card4" "card5 card6";
+    grid-template-areas: "activities__title activities__title"
+ "card1 card2"
+ "card3 card4"
+ "card5 card6";
   }
   .activities a {
     margin-bottom: 0;
@@ -445,7 +454,10 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 1.2fr 1fr 1.2fr;
     grid-gap: 2.5rem;
-    grid-template-areas: "activities__title activities__title activities__title activities__title" "card1 card2 card3 card4" "card1 card2 card3 card6" "card1 card5 card3 card6";
+    grid-template-areas: "activities__title activities__title activities__title activities__title"
+ "card1 card2 card3 card4"
+ "card1 card2 card3 card6"
+ "card1 card5 card3 card6";
   }
   .activities a {
     margin-bottom: 0;
@@ -506,7 +518,8 @@ header .navbar {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "logo login" "host act";
+  grid-template-areas: "logo login"
+ "host act";
 }
 
 header .navbar #logo {
@@ -683,4 +696,3 @@ footer {
     width: 30%;
   }
 }
-/*# sourceMappingURL=style.css.map */
