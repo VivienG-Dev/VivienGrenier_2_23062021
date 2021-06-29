@@ -662,8 +662,9 @@ footer {
   padding: 1rem;
 }
 
-.footer__link h3 {
+.footer__link h4 {
   margin-bottom: 1rem;
+  font-size: 1.17em;
 }
 
 .footer__link li {

@@ -29,7 +29,6 @@ li {
 }
 
 body {
-  background: var(--body-background);
   color: var(--txt-body);
 }
 
@@ -86,8 +85,6 @@ body {
   border-radius: 20px;
   transition: all .2s ease-in-out;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
 }
 
 .card__img {
@@ -165,8 +162,6 @@ body {
   width: 100%;
   padding: inherit;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
 }
 
 .card--activities .card__img {
@@ -676,8 +671,9 @@ footer {
   padding: 1rem;
 }
 
-.footer__link h3 {
+.footer__link h4 {
   margin-bottom: 1rem;
+  font-size: 1.17em;
 }
 
 .footer__link li {
