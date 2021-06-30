@@ -24,6 +24,18 @@ a {
   color: inherit;
 }
 
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
 li {
   list-style: none;
 }
