@@ -15,18 +15,6 @@ a {
   color: inherit;
 }
 
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  text-decoration: underline;
-}
-
 li {
   list-style: none;
 }
@@ -681,6 +669,18 @@ footer {
 
 .footer__link li {
   margin-bottom: .5rem;
+}
+
+.footer__link a:visited {
+  text-decoration: none;
+}
+
+.footer__link a:hover {
+  text-decoration: underline;
+}
+
+.footer__link a:active {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
