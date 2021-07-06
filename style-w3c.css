@@ -224,6 +224,7 @@ body {
 }
 
 .search__bar::placeholder {
+  font-family: 'Raleway', sans-serif;
   color: #252525;
   font-size: 1rem;
   font-weight: 600;
@@ -231,6 +232,7 @@ body {
 
 .search__btn {
   display: flex;
+  font-family: 'Raleway', sans-serif;
   margin-left: -10px;
   align-items: center;
   height: 50px;
